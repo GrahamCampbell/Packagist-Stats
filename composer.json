@@ -1,0 +1,39 @@
+{
+    "name": "graham-campbell/packagist-stats",
+    "description": "Packagist Stats Is A CLI Tool To Display Download Stats For Packagist Packages",
+    "keywords": ["packagist", "stats", "packages", "cl", "PackagistStats", "Packagist Stats", "Packagist-Stats", "Graham Campbell", "GrahamCampbell"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Graham Campbell",
+            "email": "graham@mineuk.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "symfony/console": "~2.5",
+        "knplabs/packagist-api": "~1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0",
+        "mockery/mockery": "~0.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "GrahamCampbell\\PackagistStats\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "GrahamCampbell\\Tests\\PackagistStats\\": "tests/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
+    }
+}
