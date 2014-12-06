@@ -53,7 +53,6 @@ class ClientTest extends TestCase
 
     /**
      * @expectedException PHPUnit_Framework_Error
-     * @expectedExceptionMessage Argument 1 passed to GrahamCampbell\PackagistStats\Client::__construct() must be an instance of Packagist\Api\Client, none given
      */
     public function testInstantiationRequiresParam()
     {
