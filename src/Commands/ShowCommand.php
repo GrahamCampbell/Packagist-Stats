@@ -49,8 +49,8 @@ class ShowCommand extends Command
     /**
      * Executes the command.
      *
-     * @param Symfony\Component\Console\Input\InputInterface   $input
-     * @param Symfony\Component\Console\Output\OutputInterface $output
+     * @param \Symfony\Component\Console\Input\InputInterface   $input
+     * @param \Symfony\Component\Console\Output\OutputInterface $output
      *
      * @return void
      */
@@ -90,7 +90,7 @@ class ShowCommand extends Command
     /**
      * Get the table instance.
      *
-     * @param Symfony\Component\Console\Output\OutputInterface $output
+     * @param \Symfony\Component\Console\Output\OutputInterface $output
      *
      * @return \Symfony\Component\Console\Helper\Table
      */
