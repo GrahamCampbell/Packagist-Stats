@@ -1,7 +1,7 @@
 Packagist Stats
 ===============
 
-Packagist Stats was created by, and is maintained by [Graham Campbell](https://github.com/GrahamCampbell), and is a simple command line tool to display aggregated download statistics for packagist packages. Feel free to check out the [change log](CHANGELOG.md), [releases](https://github.com/GrahamCampbell/Packagist-Stats/releases), [license](LICENSE.md), [screenshots](SCREENSHOTS.md), [api docs](http://docs.grahamjcampbell.co.uk), and [contribution guidelines](CONTRIBUTING.md).
+Packagist Stats was created by, and is maintained by [Graham Campbell](https://github.com/GrahamCampbell), and is a simple command line tool to display aggregated download statistics for packagist packages. Feel free to check out the [change log](CHANGELOG.md), [releases](https://github.com/GrahamCampbell/Packagist-Stats/releases), [license](LICENSE.md), [api docs](http://docs.grahamjcampbell.co.uk), and [contribution guidelines](CONTRIBUTING.md).
 
 ![Packagist Stats](https://cloud.githubusercontent.com/assets/2829600/5329155/f680c64e-7d97-11e4-9900-fce3380d8a37.PNG)
 
@@ -22,25 +22,25 @@ This project is relatively small, and it's usage is pretty simple.
 Install dependencies:
 
 ```bash
-composer install
+$ composer install
 ```
 
 Show the stats for all packages under the `graham-campbell` vendor:
 
 ```bash
-php stats show graham-campbell
+$ php stats show graham-campbell
 ```
 
 Show the stats for the `graham-campbell/packagist-stats` package:
 
 ```bash
-php stats show graham-campbell/packagist-stats
+$ php stats show graham-campbell/packagist-stats
 ```
 
 You may also pass as many vendor names or package names as you like, at once:
 
 ```bash
-php stats show graham-campbell phpunit mockery/mockery
+$ php stats show graham-campbell phpunit mockery/mockery
 ```
 
 
