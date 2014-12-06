@@ -10,7 +10,7 @@ Packagist Stats was created by, and is maintained by [Graham Campbell](https://g
 <a href="https://travis-ci.org/GrahamCampbell/Packagist-Stats"><img src="https://img.shields.io/travis/GrahamCampbell/Packagist-Stats/master.svg?style=flat-square" alt="Build Status"></img></a>
 <a href="https://scrutinizer-ci.com/g/GrahamCampbell/Packagist-Stats/code-structure"><img src="https://img.shields.io/scrutinizer/coverage/g/GrahamCampbell/Packagist-Stats.svg?style=flat-square" alt="Coverage Status"></img></a>
 <a href="https://scrutinizer-ci.com/g/GrahamCampbell/Packagist-Stats"><img src="https://img.shields.io/scrutinizer/g/GrahamCampbell/Packagist-Stats.svg?style=flat-square" alt="Quality Score"></img></a>
-<a href="LICENSE.md"><img src="https://img.shields.io/badge/license-AGPL%203.0-brightgreen.svg?style=flat-square" alt="Software License"></img></a>
+<a href="LICENSE.md"><img src="https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square" alt="Software License"></img></a>
 <a href="https://github.com/GrahamCampbell/Packagist-Stats/releases"><img src="https://img.shields.io/github/release/GrahamCampbell/Packagist-Stats.svg?style=flat-square" alt="Latest Version"></img></a>
 </p>
 
@@ -22,7 +22,7 @@ This project is relatively small, and it's usage is pretty simple.
 Install dependencies:
 
 ```bash
-$ composer install
+$ composer install --no-dev
 ```
 
 Show the stats for all packages under the `graham-campbell` vendor:
