@@ -15,6 +15,7 @@
 namespace GrahamCampbell\PackagistStats\Commands;
 
 use GrahamCampbell\PackagistStats\Client;
+use GrahamCampbell\PackagistStats\Presenters\PackagesPresenter;
 use Packagist\Api\Client as Packagist;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Helper\Table;
@@ -43,7 +44,7 @@ class ShowCommand extends Command
     {
         $this->setName("show");
         $this->setDescription("Display the package stats for the given vendor");
-        $this->addArgument('vendors', InputArgument::IS_ARRAY, 'The vendor name');
+        $this->addArgument('vendors', InputArgument::IS_ARRAY, 'The vendor name(s)');
     }
 
     /**
@@ -56,7 +57,7 @@ class ShowCommand extends Command
      */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $packages = $this->getClient()->packages($input->getArgument('vendors'));
+        $packages = $this->getPackages($input->getArgument('vendors'));
 
         $table = $this->getTable($output);
 
@@ -70,21 +71,27 @@ class ShowCommand extends Command
 
         $table->addRow(new TableSeparator());
 
-        $table->addRow(['SUMMARY', $this->getAllTimeTotal($packages), $this->getMonthlyTotal($packages)]);
+        $table->addRow(['SUMMARY', $packages->getAllTimeTotal(), $packages->getMonthlyTotal()]);
 
         $table->render();
     }
 
     /**
-     * Get the client instance.
+     * Get the presented packages.
      *
-     * @return \GrahamCampbell\PackagistStats\Client
+     * @param array $vendors
+     *
+     * @return \GrahamCampbell\PackagistStats\Presenters\PackagesPresenter
      */
-    protected function getClient()
+    protected function getPackages(array $vendors)
     {
         $packagist = new Packagist();
 
-        return new Client($packagist);
+        $client = new Client($packagist);
+
+        $packages = $client->packages($vendors);
+
+        return new PackagesPresenter($packages);
     }
 
     /**
@@ -101,41 +108,5 @@ class ShowCommand extends Command
         $table->setHeaders(['Package', 'Total Downloads', 'Monthly Downloads']);
 
         return $table;
-    }
-
-    /**
-     * Get the all time total downloads.
-     *
-     * @param array $packages
-     *
-     * @return int
-     */
-    protected function getAllTimeTotal(array $packages)
-    {
-        $downloads = 0;
-
-        foreach ($packages as $package) {
-            $downloads += $package->getDownloads()->getTotal();
-        }
-
-        return $downloads;
-    }
-
-    /**
-     * Get the total monthly downloads.
-     *
-     * @param array $packages
-     *
-     * @return int
-     */
-    protected function getMonthlyTotal(array $packages)
-    {
-        $downloads = 0;
-
-        foreach ($packages as $package) {
-            $downloads += $package->getDownloads()->getMonthly();
-        }
-
-        return $downloads;
     }
 }
