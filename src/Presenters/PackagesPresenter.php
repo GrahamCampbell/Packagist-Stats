@@ -21,7 +21,7 @@ use IteratorAggregate;
 /**
  * This is the packages presenter class.
  *
- * @author    Graham Campbell <graham@mineuk.com>
+ * @author    Graham Campbell <graham@cachethq.io>
  * @copyright 2014 Graham Campbell
  * @license   <https://github.com/GrahamCampbell/Packagist-Stats/blob/master/LICENSE.md> MIT
  */
