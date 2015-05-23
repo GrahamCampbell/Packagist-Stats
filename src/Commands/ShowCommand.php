@@ -42,8 +42,8 @@ class ShowCommand extends Command
      */
     protected function configure()
     {
-        $this->setName("show");
-        $this->setDescription("Display the package stats for the given vendor");
+        $this->setName('show');
+        $this->setDescription('Display the package stats for the given vendor');
         $this->addArgument('vendors', InputArgument::IS_ARRAY, 'The vendor name(s)');
     }
 
