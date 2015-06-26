@@ -6,11 +6,11 @@
     "authors": [
         {
             "name": "Graham Campbell",
-            "email": "graham@cachethq.io"
+            "email": "graham@alt-three.com"
         }
     ],
     "require": {
-        "php": ">=5.4.0",
+        "php": ">=5.5.9",
         "symfony/console": "~2.5",
         "knplabs/packagist-api": "~1.0"
     },
@@ -33,7 +33,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "0.1-dev"
+            "dev-master": "0.2-dev"
         }
     }
 }

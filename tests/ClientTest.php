@@ -1,15 +1,12 @@
 <?php
 
-/**
- * This file is part of Packagist Stats by Graham Campbell.
+/*
+ * This file is part of Packagist Stats.
  *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
- * THE SOFTWARE.
+ * (c) Graham Campbell <graham@alt-three.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
  */
 
 namespace GrahamCampbell\Tests\PackagistStats;
@@ -22,7 +19,7 @@ use PHPUnit_Framework_TestCase as TestCase;
 /**
  * This is the client test class.
  *
- * @author    Graham Campbell <graham@cachethq.io>
+ * @author    Graham Campbell <graham@alt-three.com>
  * @copyright 2014 Graham Campbell
  * @license   <https://github.com/GrahamCampbell/Packagist-Stats/blob/master/LICENSE.md> MIT
  */
