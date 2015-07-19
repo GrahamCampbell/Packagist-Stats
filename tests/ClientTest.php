@@ -53,6 +53,22 @@ class ClientTest extends TestCase
      */
     public function testInstantiationRequiresParam()
     {
+        if (version_compare(PHP_VERSION, '7.0') > 0) {
+            $this->markTestSkipped('PHP 5 is required.');
+        }
+
+        $client = new Client();
+    }
+
+    /**
+     * @expectedException TypeError
+     */
+    public function testInstantiationRequiresParam()
+    {
+        if (version_compare(PHP_VERSION, '7.0') < 0) {
+            $this->markTestSkipped('PHP 7 is required.');
+        }
+
         $client = new Client();
     }
 
