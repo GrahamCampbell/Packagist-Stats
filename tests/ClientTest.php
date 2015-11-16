@@ -13,7 +13,7 @@ namespace GrahamCampbell\Tests\PackagistStats;
 
 use GrahamCampbell\PackagistStats\Client;
 use Packagist\Api\Client as Packagist;
-use PHPUnit_Framework_Error;
+use PHPUnit_Framework_TestCase as TestCase;
 
 /**
  * This is the client test class.
