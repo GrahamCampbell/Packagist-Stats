@@ -12,7 +12,6 @@
 namespace GrahamCampbell\Tests\PackagistStats;
 
 use GrahamCampbell\PackagistStats\Client;
-use Mockery;
 use Packagist\Api\Client as Packagist;
 use PHPUnit_Framework_TestCase as TestCase;
 
@@ -23,54 +22,36 @@ use PHPUnit_Framework_TestCase as TestCase;
  */
 class ClientTest extends TestCase
 {
-    /**
-     * Tear down the test case.
-     *
-     * @return void
-     */
-    public function tearDown()
-    {
-        if ($container = Mockery::getContainer()) {
-            $this->addToAssertionCount($container->mockery_getExpectationCount());
-        }
-
-        Mockery::close();
-    }
-
     public function testCanBeInstantiated()
     {
         $packagist = new Packagist();
         $client = new Client($packagist);
 
-        $this->assertInstanceOf('GrahamCampbell\PackagistStats\Client', $client);
-        $this->assertInstanceOf('Packagist\Api\Client', $client->getPackagistClient());
+        $this->assertInstanceOf(Client::class, $client);
+        $this->assertInstanceOf(Packagist::class, $client->getPackagistClient());
     }
 
     /**
      * @expectedException PHPUnit_Framework_Error
      */
-    public function testInstantiationRequiresParam()
+    public function testInstantiationRequiresParamOnPhp5()
     {
-        $client = new Client();
+        if (PHP_MAJOR_VERSION !== 5) {
+            $this->markTestSkipped('PHP 5 is required.');
+        }
+
+        new Client();
     }
 
-    public function testSingleString()
+    /**
+     * @expectedException TypeError
+     */
+    public function testInstantiationRequiresParamOnPhp7()
     {
-        $this->markTestSkipped('TODO');
-    }
+        if (PHP_MAJOR_VERSION !== 7) {
+            $this->markTestSkipped('PHP 7 is required.');
+        }
 
-    public function testArrayOfOne()
-    {
-        $this->markTestSkipped('TODO');
-    }
-
-    public function testArrayOfMany()
-    {
-        $this->markTestSkipped('TODO');
-    }
-
-    protected function getMockedClient()
-    {
-        $mock = Mockery::mock('Packagist\Api\Client');
+        new Client();
     }
 }
