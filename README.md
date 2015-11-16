@@ -1,10 +1,9 @@
 Packagist Stats
 ===============
 
-Packagist Stats was created by, and is maintained by [Graham Campbell](https://github.com/GrahamCampbell), and is a simple command line tool to display aggregated download statistics for packagist packages. Feel free to check out the [change log](CHANGELOG.md), [releases](https://github.com/GrahamCampbell/Packagist-Stats/releases), [license](LICENSE.md), [api docs](http://docs.grahamjcampbell.co.uk), and [contribution guidelines](CONTRIBUTING.md).
+Packagist Stats was created by, and is maintained by [Graham Campbell](https://github.com/GrahamCampbell), and is a simple command line tool to display aggregated download statistics for packagist packages. Feel free to check out the [change log](CHANGELOG.md), [releases](https://github.com/GrahamCampbell/Packagist-Stats/releases), [license](LICENSE.md), and [contribution guidelines](CONTRIBUTING.md).
 
 ![Packagist Stats](https://cloud.githubusercontent.com/assets/2829600/5329155/f680c64e-7d97-11e4-9900-fce3380d8a37.PNG)
-
 
 <p align="center">
 <a href="https://travis-ci.org/GrahamCampbell/Packagist-Stats"><img src="https://img.shields.io/travis/GrahamCampbell/Packagist-Stats/master.svg?style=flat-square" alt="Build Status"></img></a>
@@ -19,7 +18,9 @@ Packagist Stats was created by, and is maintained by [Graham Campbell](https://g
 
 This project is relatively small, and it's usage is pretty simple.
 
-Installation via composer:
+Either [PHP](https://php.net) 5.5+ or [HHVM](http://hhvm.com) 3.6+ are required.
+
+To get the latest version, simply require the project using [Composer](https://getcomposer.org):
 
 ```bash
 $ composer global require graham-campbell/packagist-stats
@@ -44,26 +45,11 @@ $ stats show graham-campbell phpunit mockery/mockery
 ```
 
 
+## Security
+
+If you discover a security vulnerability within this package, please send an e-mail to Graham Campbell at graham@alt-three.com. All security vulnerabilities will be promptly addressed.
+
+
 ## License
 
-The MIT License (MIT)
-
-Copyright (c) 2014 Graham Campbell
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
+Packagist Stats is licensed under [The MIT License (MIT)](LICENSE).
