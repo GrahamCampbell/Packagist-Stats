@@ -16,9 +16,7 @@ use Packagist\Api\Client as Packagist;
 /**
  * This is the client class.
  *
- * @author    Graham Campbell <graham@alt-three.com>
- * @copyright 2014 Graham Campbell
- * @license   <https://github.com/GrahamCampbell/Packagist-Stats/blob/master/LICENSE.md> MIT
+ * @author Graham Campbell <graham@alt-three.com>
  */
 class Client
 {

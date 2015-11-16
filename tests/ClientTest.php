@@ -19,9 +19,7 @@ use PHPUnit_Framework_TestCase as TestCase;
 /**
  * This is the client test class.
  *
- * @author    Graham Campbell <graham@alt-three.com>
- * @copyright 2014 Graham Campbell
- * @license   <https://github.com/GrahamCampbell/Packagist-Stats/blob/master/LICENSE.md> MIT
+ * @author Graham Campbell <graham@alt-three.com>
  */
 class ClientTest extends TestCase
 {
