@@ -14,6 +14,7 @@ namespace GrahamCampbell\Tests\PackagistStats;
 use GrahamCampbell\PackagistStats\Client;
 use Packagist\Api\Client as Packagist;
 use PHPUnit_Framework_TestCase as TestCase;
+use TypeError;
 
 /**
  * This is the client test class.
@@ -34,24 +35,12 @@ class ClientTest extends TestCase
     /**
      * @expectedException PHPUnit_Framework_Error
      */
-    public function testInstantiationRequiresParamOnPhp5()
+    public function testInstantiationRequiresParam()
     {
-        if (PHP_MAJOR_VERSION !== 5) {
-            $this->markTestSkipped('PHP 5 is required.');
+        try {
+            new Client();
+        } catch (TypeError $e) {
+            throw new PHPUnit_Framework_Error($e->getMessage(), $e->getCode(), $e->getFile(), $e->getLine());
         }
-
-        new Client();
-    }
-
-    /**
-     * @expectedException TypeError
-     */
-    public function testInstantiationRequiresParamOnPhp7()
-    {
-        if (PHP_MAJOR_VERSION !== 7) {
-            $this->markTestSkipped('PHP 7 is required.');
-        }
-
-        new Client();
     }
 }
