@@ -22,7 +22,7 @@ This project is relatively small, and it's usage is pretty simple.
 Installation via composer:
 
 ```bash
-$ composer global require graham-campbell/packagist-stats dev-master
+$ composer global require graham-campbell/packagist-stats
 ```
 
 Show the stats for all packages under the `graham-campbell` vendor:
