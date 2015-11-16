@@ -19,28 +19,28 @@ Packagist Stats was created by, and is maintained by [Graham Campbell](https://g
 
 This project is relatively small, and it's usage is pretty simple.
 
-Install dependencies:
+Installation via composer:
 
 ```bash
-$ composer install --no-dev
+$ composer global require graham-campbell/packagist-stats dev-master
 ```
 
 Show the stats for all packages under the `graham-campbell` vendor:
 
 ```bash
-$ php stats show graham-campbell
+$ stats show graham-campbell
 ```
 
 Show the stats for the `graham-campbell/packagist-stats` package:
 
 ```bash
-$ php stats show graham-campbell/packagist-stats
+$ stats show graham-campbell/packagist-stats
 ```
 
 You may also pass as many vendor names or package names as you like, at once:
 
 ```bash
-$ php stats show graham-campbell phpunit mockery/mockery
+$ stats show graham-campbell phpunit mockery/mockery
 ```
 
 
