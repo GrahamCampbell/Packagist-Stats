@@ -14,8 +14,6 @@ namespace GrahamCampbell\Tests\PackagistStats;
 use GrahamCampbell\PackagistStats\Client;
 use Packagist\Api\Client as Packagist;
 use PHPUnit_Framework_Error;
-use PHPUnit_Framework_TestCase as TestCase;
-use TypeError;
 
 /**
  * This is the client test class.
@@ -38,10 +36,6 @@ class ClientTest extends TestCase
      */
     public function testInstantiationRequiresParam()
     {
-        try {
-            new Client();
-        } catch (TypeError $e) {
-            throw new PHPUnit_Framework_Error($e->getMessage(), $e->getCode(), $e->getFile(), $e->getLine());
-        }
+        new Client();
     }
 }
