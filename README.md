@@ -18,7 +18,7 @@ Packagist Stats was created by, and is maintained by [Graham Campbell](https://g
 
 This project is relatively small, and it's usage is pretty simple.
 
-Either [PHP](https://php.net) 5.5+ or [HHVM](http://hhvm.com) 3.6+ are required.
+[PHP](https://php.net) 7.0+ is required.
 
 To get the latest version, simply require the project using [Composer](https://getcomposer.org):
 

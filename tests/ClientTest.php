@@ -32,7 +32,7 @@ class ClientTest extends TestCase
     }
 
     /**
-     * @expectedException PHPUnit_Framework_Error
+     * @expectedException TypeError
      */
     public function testInstantiationRequiresParam()
     {
