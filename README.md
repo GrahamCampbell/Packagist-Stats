@@ -6,6 +6,7 @@ Packagist Stats was created by, and is maintained by [Graham Campbell](https://g
 ![Packagist Stats](https://cloud.githubusercontent.com/assets/2829600/5329155/f680c64e-7d97-11e4-9900-fce3380d8a37.PNG)
 
 <p align="center">
+<a href="https://styleci.io/repos/27651218"><img src="https://styleci.io/repos/27651218/shield" alt="StyleCI Status"></img></a>
 <a href="https://travis-ci.org/GrahamCampbell/Packagist-Stats"><img src="https://img.shields.io/travis/GrahamCampbell/Packagist-Stats/master.svg?style=flat-square" alt="Build Status"></img></a>
 <a href="https://scrutinizer-ci.com/g/GrahamCampbell/Packagist-Stats/code-structure"><img src="https://img.shields.io/scrutinizer/coverage/g/GrahamCampbell/Packagist-Stats.svg?style=flat-square" alt="Coverage Status"></img></a>
 <a href="https://scrutinizer-ci.com/g/GrahamCampbell/Packagist-Stats"><img src="https://img.shields.io/scrutinizer/g/GrahamCampbell/Packagist-Stats.svg?style=flat-square" alt="Quality Score"></img></a>
