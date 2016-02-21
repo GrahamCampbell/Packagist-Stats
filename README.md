@@ -16,9 +16,7 @@ Packagist Stats was created by, and is maintained by [Graham Campbell](https://g
 
 ## Documentation
 
-This project is relatively small, and it's usage is pretty simple.
-
-[PHP](https://php.net) 7.0+ is required.
+This project is relatively small, and it's usage is pretty simple. [PHP](https://php.net) 7.0+ is required.
 
 To get the latest version, simply require the project using [Composer](https://getcomposer.org):
 
