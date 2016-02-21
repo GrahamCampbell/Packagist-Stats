@@ -28,6 +28,9 @@
         }
     },
     "config": {
+        "platform": {
+            "php": "7.0.0"
+        },
         "preferred-install": "dist"
     },
     "extra": {
