@@ -1,16 +1,19 @@
 language: php
-
-php:
-  - 7.0
-
+dist: trusty
 sudo: false
 
-install:
-  - travis_retry composer install --no-interaction --prefer-source
+matrix:
+  include:
+    - php: 7.0
+    - php: 7.1
+    - php: 7.2
+
+install: travis_retry composer install --no-suggest --prefer-dist -n -o
 
 script:
-  - vendor/bin/phpunit --coverage-clover build/logs/clover.xml
+  - if [ "$TRAVIS_PHP_VERSION" != "7.0" ]; then vendor/bin/phpunit; fi
+  - if [ "$TRAVIS_PHP_VERSION" == "7.0" ]; then vendor/bin/phpunit --coverage-clover build/logs/clover.xml; fi
 
 after_script:
-  - wget https://scrutinizer-ci.com/ocular.phar
-  - php ocular.phar code-coverage:upload --format=php-clover build/logs/clover.xml
+  - if [ "$TRAVIS_PHP_VERSION" == "7.0" ]; then wget https://scrutinizer-ci.com/ocular.phar; fi
+  - if [ "$TRAVIS_PHP_VERSION" == "7.0" ]; then php ocular.phar code-coverage:upload --format=php-clover build/logs/clover.xml; fi
