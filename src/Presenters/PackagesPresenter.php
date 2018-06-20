@@ -16,6 +16,7 @@ namespace GrahamCampbell\PackagistStats\Presenters;
 use ArrayIterator;
 use Countable;
 use IteratorAggregate;
+use Packagist\Api\Result\Package;
 
 /**
  * This is the packages presenter class.
@@ -27,7 +28,7 @@ class PackagesPresenter implements Countable, IteratorAggregate
     /**
      * The array of packages.
      *
-     * @var array
+     * @var Package[]
      */
     protected $packages;
 
@@ -76,6 +77,22 @@ class PackagesPresenter implements Countable, IteratorAggregate
     }
 
     /**
+     * Get the total daily downloads.
+     *
+     * @return int
+     */
+    public function getDailyTotal()
+    {
+        $downloads = 0;
+
+        foreach ($this->packages as $package) {
+            $downloads += $package->getDownloads()->getDaily();
+        }
+
+        return $downloads;
+    }
+
+    /**
      * Get the total number of packages.
      *
      * @return int
@@ -88,7 +105,7 @@ class PackagesPresenter implements Countable, IteratorAggregate
     /**
      * Get an iterator for the packages.
      *
-     * @return \ArrayIterator
+     * @return \ArrayIterator|Package[]
      */
     public function getIterator()
     {
