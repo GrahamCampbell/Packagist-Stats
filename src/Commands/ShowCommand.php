@@ -63,12 +63,18 @@ class ShowCommand extends Command
                 $package->getName(),
                 $package->getDownloads()->getTotal(),
                 $package->getDownloads()->getMonthly(),
+                $package->getDownloads()->getDaily(),
             ]);
         }
 
         $table->addRow(new TableSeparator());
 
-        $table->addRow(['SUMMARY', $packages->getAllTimeTotal(), $packages->getMonthlyTotal()]);
+        $table->addRow([
+            'SUMMARY',
+            $packages->getAllTimeTotal(),
+            $packages->getMonthlyTotal(),
+            $packages->getDailyTotal(),
+        ]);
 
         $table->render();
     }
@@ -102,7 +108,7 @@ class ShowCommand extends Command
     {
         $table = new Table($output);
 
-        $table->setHeaders(['Package', 'Total Downloads', 'Monthly Downloads']);
+        $table->setHeaders(['Package', 'Total Downloads', 'Monthly Downloads', 'Daily downloads']);
 
         return $table;
     }
