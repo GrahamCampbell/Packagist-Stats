@@ -16,6 +16,7 @@ namespace GrahamCampbell\Tests\PackagistStats;
 use GrahamCampbell\PackagistStats\Client;
 use Packagist\Api\Client as Packagist;
 use PHPUnit\Framework\TestCase;
+use TypeError;
 
 /**
  * This is the client test class.
@@ -33,11 +34,10 @@ class ClientTest extends TestCase
         $this->assertInstanceOf(Packagist::class, $client->getPackagistClient());
     }
 
-    /**
-     * @expectedException TypeError
-     */
     public function testInstantiationRequiresParam()
     {
+        $this->expectException(TypeError::class);
+
         new Client();
     }
 }
