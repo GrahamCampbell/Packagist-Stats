@@ -15,7 +15,7 @@ Packagist Stats was created by, and is maintained by [Graham Campbell](https://g
 </p>
 
 
-## Documentation
+## Usage
 
 This project is relatively small, and it's usage is pretty simple. [PHP](https://php.net) 7.2+ is required.
 
@@ -42,6 +42,13 @@ You may also pass as many vendor names or package names as you like, at once:
 ```bash
 $ stats show graham-campbell phpunit mockery/mockery
 ```
+
+
+## Building
+
+The following documentation is for contributors to this package only.
+
+To build the `phar` file, simply run `box compile`.
 
 
 ## Security
