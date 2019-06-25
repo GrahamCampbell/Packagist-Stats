@@ -1,7 +1,7 @@
 Packagist Stats
 ===============
 
-Packagist Stats was created by, and is maintained by [Graham Campbell](https://github.com/GrahamCampbell), and is a simple command line tool to display aggregated download statistics for packagist packages. Feel free to check out the [releases](https://github.com/GrahamCampbell/Packagist-Stats/releases), [license](LICENSE.md), and [contribution guidelines](CONTRIBUTING.md).
+Packagist Stats was created by, and is maintained by [Graham Campbell](https://github.com/GrahamCampbell), and is a simple command line tool to display aggregated download statistics for packagist packages. Feel free to check out the [releases](https://github.com/GrahamCampbell/Packagist-Stats/releases), [security policy](https://github.com/GrahamCampbell/Packagist-Stats/security/policy), [license](LICENSE), [code of conduct](.github/CODE_OF_CONDUCT.md), and [contribution guidelines]
 
 ![Packagist Stats](https://cloud.githubusercontent.com/assets/2829600/5329155/f680c64e-7d97-11e4-9900-fce3380d8a37.PNG)
 
@@ -17,9 +17,9 @@ Packagist Stats was created by, and is maintained by [Graham Campbell](https://g
 
 ## Documentation
 
-This project is relatively small, and it's usage is pretty simple. [PHP](https://php.net) 7.0+ is required.
+This project is relatively small, and it's usage is pretty simple. [PHP](https://php.net) 7.2+ is required.
 
-To get the latest version, simply require the project using [Composer](https://getcomposer.org):
+To get the latest version, simply require the project using [Composer](https://getcomposer.org) or download the phar from the [releases](https://github.com/GrahamCampbell/Packagist-Stats/releases) page:
 
 ```bash
 $ composer global require graham-campbell/packagist-stats
@@ -46,7 +46,7 @@ $ stats show graham-campbell phpunit mockery/mockery
 
 ## Security
 
-If you discover a security vulnerability within this package, please send an e-mail to Graham Campbell at graham@alt-three.com. All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within this package, please send an email to Graham Campbell at graham@alt-three.com. All security vulnerabilities will be promptly addressed. You may view our full security policy [here](https://github.com/GrahamCampbell/Packagist-Stats/security/policy).
 
 
 ## License

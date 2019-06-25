@@ -1,2 +1,4 @@
-phpunit.xml
-vendor
+/bin/stats.phar
+/box.json
+/phpunit.xml
+/vendor
