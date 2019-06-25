@@ -1,7 +1,7 @@
 Packagist Stats
 ===============
 
-Packagist Stats was created by, and is maintained by [Graham Campbell](https://github.com/GrahamCampbell), and is a simple command line tool to display aggregated download statistics for packagist packages. Feel free to check out the [releases](https://github.com/GrahamCampbell/Packagist-Stats/releases), [security policy](https://github.com/GrahamCampbell/Packagist-Stats/security/policy), [license](LICENSE), [code of conduct](.github/CODE_OF_CONDUCT.md), and [contribution guidelines]
+Packagist Stats was created by, and is maintained by [Graham Campbell](https://github.com/GrahamCampbell), and is a simple command line tool to display aggregated download statistics for packagist packages. Feel free to check out the [releases](https://github.com/GrahamCampbell/Packagist-Stats/releases), [security policy](https://github.com/GrahamCampbell/Packagist-Stats/security/policy), [license](LICENSE), [code of conduct](.github/CODE_OF_CONDUCT.md), and [contribution guidelines](.github/CONTRIBUTING.md).
 
 ![Packagist Stats](https://cloud.githubusercontent.com/assets/2829600/5329155/f680c64e-7d97-11e4-9900-fce3380d8a37.PNG)
 

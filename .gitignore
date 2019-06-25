@@ -1,3 +1,4 @@
+/.phpunit.result.cache
 /bin/stats.phar
 /box.json
 /phpunit.xml
