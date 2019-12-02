@@ -1,11 +1,16 @@
-dist: xenial
+dist: bionic
 
 matrix:
   include:
-    - env:
+    - name: PHP 7.2
+      env:
         - PHP_VERSION=7.2
-    - env:
+    - name: PHP 7.3
+      env:
         - PHP_VERSION=7.3
+    - name: PHP 7.4
+      env:
+        - PHP_VERSION=7.4
 
 before_install:
   - travis_retry docker pull registry.gitlab.com/grahamcampbell/php:$PHP_VERSION
