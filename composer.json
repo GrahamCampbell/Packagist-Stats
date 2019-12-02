@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "php": "^7.2",
+        "php": "^7.2.5",
         "symfony/console": "^3.4|^4.0",
         "knplabs/packagist-api": "^1.5"
     },
@@ -30,14 +30,14 @@
     },
     "config": {
         "platform": {
-            "php": "7.2.0"
+            "php": "7.2.5"
         },
         "preferred-install": "dist"
     },
     "extra": {
         "bin-dir": "bin",
         "branch-alias": {
-            "dev-master": "4.0-dev"
+            "dev-master": "4.1-dev"
         }
     }
 }
