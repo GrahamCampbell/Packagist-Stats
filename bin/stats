@@ -32,6 +32,6 @@ declare(strict_types=1);
     }
 })();
 
-$app = new Symfony\Component\Console\Application();
+$app = new Symfony\Component\Console\Application('Packagist Stats', '4.1.0');
 $app->add(new GrahamCampbell\PackagistStats\Commands\ShowCommand());
 $app->run();
