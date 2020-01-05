@@ -50,7 +50,7 @@ class ShowCommand extends Command
      * @param \Symfony\Component\Console\Input\InputInterface   $input
      * @param \Symfony\Component\Console\Output\OutputInterface $output
      *
-     * @return void
+     * @return int
      */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
@@ -71,6 +71,8 @@ class ShowCommand extends Command
         $table->addRow(['SUMMARY', $packages->getAllTimeTotal(), $packages->getMonthlyTotal()]);
 
         $table->render();
+
+        return 0;
     }
 
     /**
