@@ -1,3 +1,4 @@
 {
+    "compression": "GZ",
     "main": "bin/stats"
 }

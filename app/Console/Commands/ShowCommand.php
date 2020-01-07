@@ -11,11 +11,10 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace GrahamCampbell\PackagistStats\Commands;
+namespace GrahamCampbell\PackagistStats\Console\Commands;
 
 use GrahamCampbell\PackagistStats\Client;
 use GrahamCampbell\PackagistStats\Presenters\PackagesPresenter;
-use Packagist\Api\Client as Packagist;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Helper\Table;
 use Symfony\Component\Console\Helper\TableSeparator;
@@ -28,8 +27,28 @@ use Symfony\Component\Console\Output\OutputInterface;
  *
  * @author Graham Campbell <graham@alt-three.com>
  */
-class ShowCommand extends Command
+final class ShowCommand extends Command
 {
+    /**
+     * The client instance.
+     *
+     * @var \GrahamCampbell\PackagistStats\Client
+     */
+    private $client;
+
+    /**
+     * Create a new analyze command instance.
+     *
+     * @param \GrahamCampbell\PackagistStats\Client $client
+     *
+     * @return void
+     */
+    public function __construct(Client $client)
+    {
+        $this->client = $client;
+        parent::__construct();
+    }
+
     /**
      * Configures the command.
      *
@@ -56,7 +75,7 @@ class ShowCommand extends Command
     {
         $packages = $this->getPackages($input->getArgument('vendors'));
 
-        $table = $this->getTable($output);
+        $table = self::getTable($output);
 
         foreach ($packages as $package) {
             $table->addRow([
@@ -82,13 +101,9 @@ class ShowCommand extends Command
      *
      * @return \GrahamCampbell\PackagistStats\Presenters\PackagesPresenter
      */
-    protected function getPackages(array $vendors)
+    private function getPackages(array $vendors)
     {
-        $packagist = new Packagist();
-
-        $client = new Client($packagist);
-
-        $packages = $client->packages($vendors);
+        $packages = $this->client->packages($vendors);
 
         return new PackagesPresenter($packages);
     }
@@ -100,7 +115,7 @@ class ShowCommand extends Command
      *
      * @return \Symfony\Component\Console\Helper\Table
      */
-    protected function getTable(OutputInterface $output)
+    private static function getTable(OutputInterface $output)
     {
         $table = new Table($output);
 

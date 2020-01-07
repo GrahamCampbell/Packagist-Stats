@@ -11,16 +11,18 @@
     ],
     "require": {
         "php": "^7.2.5",
-        "symfony/console": "^3.4|^4.0",
+        "composer/xdebug-handler": "^1.2",
+        "symfony/console": "^4.3|^5.0",
         "knplabs/packagist-api": "^1.5"
     },
     "require-dev": {
-        "humbug/box": "^3.8",
-        "phpunit/phpunit": "^8.2"
+        "graham-campbell/analyzer": "^2.4.1",
+        "humbug/box": "^3.8.4",
+        "phpunit/phpunit": "^8.5.1"
     },
     "autoload": {
         "psr-4": {
-            "GrahamCampbell\\PackagistStats\\": "src/"
+            "GrahamCampbell\\PackagistStats\\": "app/"
         }
     },
     "autoload-dev": {
@@ -37,7 +39,9 @@
     "extra": {
         "bin-dir": "bin",
         "branch-alias": {
-            "dev-master": "4.1-dev"
+            "dev-master": "5.0-dev"
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }

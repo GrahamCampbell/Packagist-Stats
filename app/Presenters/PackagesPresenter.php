@@ -22,7 +22,7 @@ use IteratorAggregate;
  *
  * @author Graham Campbell <graham@alt-three.com>
  */
-class PackagesPresenter implements Countable, IteratorAggregate
+final class PackagesPresenter implements Countable, IteratorAggregate
 {
     /**
      * The array of packages.

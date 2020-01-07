@@ -20,7 +20,7 @@ use Packagist\Api\Client as Packagist;
  *
  * @author Graham Campbell <graham@alt-three.com>
  */
-class Client
+final class Client
 {
     /**
      * The packagist client instance.

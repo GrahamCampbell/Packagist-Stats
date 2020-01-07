@@ -48,7 +48,11 @@ $ stats show graham-campbell phpunit mockery/mockery
 
 The following documentation is for contributors to this package only.
 
-To build the `phar` file, simply run `box compile`.
+To build the `phar` file, run:
+
+```bash
+$ docker run -it -w /data -v ${PWD}:/data:delegated --entrypoint vendor/bin/box --rm registry.gitlab.com/grahamcampbell/php:7.4-base compile
+```
 
 
 ## Security
