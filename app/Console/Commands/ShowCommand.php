@@ -73,7 +73,7 @@ final class ShowCommand extends Command
      */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $packages = $this->getPackages($input->getArgument('vendors'));
+        $packages = $this->getPackages((array) $input->getArgument('vendors'));
 
         $table = self::getTable($output);
 
