@@ -18,11 +18,6 @@ use Packagist\Api\Client as Packagist;
 use PHPUnit\Framework\TestCase;
 use TypeError;
 
-/**
- * This is the client test class.
- *
- * @author Graham Campbell <graham@alt-three.com>
- */
 class ClientTest extends TestCase
 {
     public function testCanBeInstantiated()
