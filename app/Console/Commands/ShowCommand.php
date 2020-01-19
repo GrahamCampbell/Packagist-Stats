@@ -37,7 +37,7 @@ final class ShowCommand extends Command
     private $client;
 
     /**
-     * Create a new analyze command instance.
+     * Create a new show command instance.
      *
      * @param \GrahamCampbell\PackagistStats\Client $client
      *
