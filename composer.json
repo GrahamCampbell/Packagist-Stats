@@ -10,8 +10,16 @@
             "email": "graham@alt-three.com"
         }
     ],
+    "replace": {
+        "paragonie/random_compat": "*",
+        "symfony/polyfill-php56": "*",
+        "symfony/polyfill-php70": "*",
+        "symfony/polyfill-php71": "*",
+        "symfony/polyfill-php72": "*"
+    },
     "require": {
         "php": "^7.2.5",
+        "ext-json": "*",
         "composer/xdebug-handler": "^1.2",
         "symfony/console": "^4.3.8|^5.0",
         "symfony/error-handler": "^4.4|^5.0",
@@ -19,7 +27,6 @@
     },
     "require-dev": {
         "graham-campbell/analyzer": "^2.4.1",
-        "humbug/box": "^3.8.4",
         "phpunit/phpunit": "^8.5.2"
     },
     "autoload": {
