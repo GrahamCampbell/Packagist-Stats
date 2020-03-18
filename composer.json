@@ -29,6 +29,9 @@
         "graham-campbell/analyzer": "^3.0",
         "phpunit/phpunit": "^8.5.2"
     },
+    "bin": [
+        "bin/stats"
+    ],
     "autoload": {
         "psr-4": {
             "GrahamCampbell\\PackagistStats\\": "app/"
