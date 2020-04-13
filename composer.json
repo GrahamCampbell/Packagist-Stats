@@ -39,6 +39,9 @@
             "GrahamCampbell\\Tests\\PackagistStats\\": "tests/"
         }
     },
+    "bin": [
+        "bin/stats"
+    ],
     "config": {
         "platform": {
             "php": "7.2.5"
