@@ -27,8 +27,8 @@
         "knplabs/packagist-api": "^1.6"
     },
     "require-dev": {
-        "graham-campbell/analyzer": "^3.0",
-        "phpunit/phpunit": "^8.5.2"
+        "graham-campbell/analyzer": "^3.0.4",
+        "phpunit/phpunit": "^8.5.11"
     },
     "autoload": {
         "psr-4": {
