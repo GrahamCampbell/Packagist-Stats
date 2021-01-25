@@ -24,7 +24,7 @@ This project is relatively small, and it's usage is pretty simple. [PHP](https:/
 To get the latest version, simply require the project using [Composer](https://getcomposer.org) or download the phar from the [releases](https://github.com/GrahamCampbell/Packagist-Stats/releases) page:
 
 ```bash
-$ composer global require graham-campbell/packagist-stats:^5.2
+$ composer global require "graham-campbell/packagist-stats:^5.2"
 ```
 
 Show the stats for all packages under the `graham-campbell` vendor:
