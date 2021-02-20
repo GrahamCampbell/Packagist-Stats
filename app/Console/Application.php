@@ -32,7 +32,7 @@ final class Application extends SymfonyApplication
      *
      * @var string
      */
-    const APP_VERSION = '5.2.2';
+    const APP_VERSION = '5.3.0';
 
     /**
      * Create a new StyleCI CLI application.
