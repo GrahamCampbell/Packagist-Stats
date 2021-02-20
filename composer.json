@@ -18,17 +18,17 @@
         "symfony/polyfill-php72": "*"
     },
     "require": {
-        "php": "^7.2.5",
+        "php": "^7.2.5 || ^8.0",
         "ext-json": "*",
         "composer/xdebug-handler": "^1.4",
-        "guzzlehttp/guzzle": "^6.5.5",
+        "guzzlehttp/guzzle": "^7.2",
         "symfony/console": "^4.3.8 || ^5.0",
         "symfony/error-handler": "^4.4 || ^5.0",
-        "knplabs/packagist-api": "^1.6"
+        "knplabs/packagist-api": "^1.7.1"
     },
     "require-dev": {
         "graham-campbell/analyzer": "^3.0.4",
-        "phpunit/phpunit": "^8.5.11"
+        "phpunit/phpunit": "^8.5.14"
     },
     "autoload": {
         "psr-4": {

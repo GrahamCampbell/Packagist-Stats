@@ -19,12 +19,12 @@ Packagist Stats was created by, and is maintained by [Graham Campbell](https://g
 
 ## Usage
 
-This project is relatively small, and it's usage is pretty simple. [PHP](https://php.net) 7.2-7.4 is required.
+This project is relatively small, and it's usage is pretty simple. [PHP](https://php.net) 7.2-8.0 is required.
 
 To get the latest version, simply require the project using [Composer](https://getcomposer.org) or download the phar from the [releases](https://github.com/GrahamCampbell/Packagist-Stats/releases) page:
 
 ```bash
-$ composer global require "graham-campbell/packagist-stats:^5.2"
+$ composer global require "graham-campbell/packagist-stats:^5.3"
 ```
 
 Show the stats for all packages under the `graham-campbell` vendor:
