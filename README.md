@@ -6,10 +6,6 @@ Packagist Stats was created by, and is maintained by [Graham Campbell](https://g
 ![Banner](https://user-images.githubusercontent.com/2829600/71477093-0f3c7780-27e0-11ea-9d3e-4fb0af34bb07.png)
 
 <p align="center">
-<a href="https://xscode.com/grahamcampbell/Packagist-Stats"><img src="https://xscode.com/assets/promo-banner.svg" alt="Promo Banner"></img></a>
-</p>
-
-<p align="center">
 <a href="https://github.com/GrahamCampbell/Packagist-Stats/actions?query=workflow%3ATests"><img src="https://img.shields.io/github/workflow/status/GrahamCampbell/Packagist-Stats/Tests?label=Tests&style=flat-square" alt="Build Status"></img></a>
 <a href="https://github.styleci.io/repos/27651218"><img src="https://github.styleci.io/repos/27651218/shield" alt="StyleCI Status"></img></a>
 <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-brightgreen?style=flat-square" alt="Software License"></img></a>
@@ -19,7 +15,7 @@ Packagist Stats was created by, and is maintained by [Graham Campbell](https://g
 
 ## Usage
 
-This project is relatively small, and it's usage is pretty simple. [PHP](https://php.net) 7.2-8.0 is required.
+This project is relatively small, and it's usage is pretty simple. [PHP](https://php.net) 7.2-8.1 is required.
 
 To get the latest version, simply require the project using [Composer](https://getcomposer.org) or download the phar from the [releases](https://github.com/GrahamCampbell/Packagist-Stats/releases) page:
 
@@ -60,7 +56,7 @@ $ make box-compiler
 
 ## Security
 
-If you discover a security vulnerability within this package, please send an email to Graham Campbell at graham@alt-three.com. All security vulnerabilities will be promptly addressed. You may view our full security policy [here](https://github.com/GrahamCampbell/Packagist-Stats/security/policy).
+If you discover a security vulnerability within this package, please send an email to security@tidelift.com. All security vulnerabilities will be promptly addressed. You may view our full security policy [here](https://github.com/GrahamCampbell/Packagist-Stats/security/policy).
 
 
 ## License
