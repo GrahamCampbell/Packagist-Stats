@@ -20,15 +20,16 @@
     "require": {
         "php": "^7.2.5 || ^8.0",
         "ext-json": "*",
-        "composer/xdebug-handler": "^1.4",
-        "guzzlehttp/guzzle": "^7.2",
-        "symfony/console": "^4.3.8 || ^5.0",
-        "symfony/error-handler": "^4.4 || ^5.0",
-        "knplabs/packagist-api": "^1.7.1"
+        "composer/xdebug-handler": "^1.4 || ^2.0 || ^3.0",
+        "guzzlehttp/guzzle": "^7.4.2",
+        "guzzlehttp/psr7": "^1.8.5 || ^2.2.1",
+        "symfony/console": "^4.3.8 || ^5.0 || ^6.0",
+        "symfony/error-handler": "^4.4 || ^5.0 || ^6.0",
+        "knplabs/packagist-api": "^1.7.2"
     },
     "require-dev": {
-        "graham-campbell/analyzer": "^3.0.4",
-        "phpunit/phpunit": "^8.5.14"
+        "graham-campbell/analyzer": "^3.0.7",
+        "phpunit/phpunit": "^8.5.25"
     },
     "autoload": {
         "psr-4": {
