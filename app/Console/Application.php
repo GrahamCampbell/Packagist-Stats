@@ -15,6 +15,7 @@ namespace GrahamCampbell\PackagistStats\Console;
 
 use GrahamCampbell\PackagistStats\Client;
 use GrahamCampbell\PackagistStats\Console\Commands\ShowCommand;
+use GuzzleHttp\Client as GuzzleClient;
 use Packagist\Api\Client as Packagist;
 use Symfony\Component\Console\Application as SymfonyApplication;
 
@@ -32,7 +33,7 @@ final class Application extends SymfonyApplication
      *
      * @var string
      */
-    const APP_VERSION = '5.3.4';
+    const APP_VERSION = '5.4.0';
 
     /**
      * Create a new StyleCI CLI application.
@@ -42,6 +43,6 @@ final class Application extends SymfonyApplication
     public function __construct()
     {
         parent::__construct(self::APP_NAME, self::APP_VERSION);
-        $this->add(new ShowCommand(new Client(new Packagist())));
+        $this->add(new ShowCommand(new Client(new Packagist(new GuzzleClient(['connect_timeout' => 10, 'timeout' => 30])))));
     }
 }
