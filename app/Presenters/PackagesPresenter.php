@@ -29,7 +29,7 @@ final class PackagesPresenter implements Countable, IteratorAggregate
      *
      * @var array
      */
-    protected $packages;
+    private array $packages;
 
     /**
      * Create a new packages presenter instance.
@@ -48,7 +48,7 @@ final class PackagesPresenter implements Countable, IteratorAggregate
      *
      * @return int
      */
-    public function getAllTimeTotal()
+    public function getAllTimeTotal(): int
     {
         $downloads = 0;
 
@@ -64,7 +64,7 @@ final class PackagesPresenter implements Countable, IteratorAggregate
      *
      * @return int
      */
-    public function getMonthlyTotal()
+    public function getMonthlyTotal(): int
     {
         $downloads = 0;
 
@@ -80,7 +80,7 @@ final class PackagesPresenter implements Countable, IteratorAggregate
      *
      * @return int
      */
-    public function count()
+    public function count(): int
     {
         return count($this->packages);
     }
@@ -90,7 +90,7 @@ final class PackagesPresenter implements Countable, IteratorAggregate
      *
      * @return \ArrayIterator
      */
-    public function getIterator()
+    public function getIterator(): ArrayIterator
     {
         return new ArrayIterator($this->packages);
     }

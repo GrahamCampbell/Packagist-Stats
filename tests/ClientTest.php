@@ -25,8 +25,7 @@ class ClientTest extends TestCase
         $packagist = new Packagist();
         $client = new Client($packagist);
 
-        $this->assertInstanceOf(Client::class, $client);
-        $this->assertInstanceOf(Packagist::class, $client->getPackagistClient());
+        self::assertInstanceOf(Client::class, $client);
     }
 
     public function testInstantiationRequiresParam()

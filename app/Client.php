@@ -27,7 +27,7 @@ final class Client
      *
      * @var \Packagist\Api\Client
      */
-    protected $packagist;
+    private Packagist $packagist;
 
     /**
      * Create a new client instance.
@@ -51,7 +51,7 @@ final class Client
      *
      * @return array
      */
-    public function packages($vendors)
+    public function packages($vendors): array
     {
         $packages = [];
 
@@ -66,15 +66,5 @@ final class Client
         }
 
         return $packages;
-    }
-
-    /**
-     * Get the packagist client instance.
-     *
-     * @return \Packagist\Api\Client
-     */
-    public function getPackagistClient()
-    {
-        return $this->packagist;
     }
 }

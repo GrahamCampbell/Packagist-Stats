@@ -6,7 +6,7 @@ Packagist Stats was created by, and is maintained by [Graham Campbell](https://g
 ![Banner](https://user-images.githubusercontent.com/2829600/71477093-0f3c7780-27e0-11ea-9d3e-4fb0af34bb07.png)
 
 <p align="center">
-<a href="https://github.com/GrahamCampbell/Packagist-Stats/actions?query=workflow%3ATests"><img src="https://img.shields.io/github/workflow/status/GrahamCampbell/Packagist-Stats/Tests?label=Tests&style=flat-square" alt="Build Status"></img></a>
+<a href="https://github.com/GrahamCampbell/Packagist-Stats/actions?query=workflow%3ATests"><img src="https://img.shields.io/github/actions/workflow/status/GrahamCampbell/Packagist-Stats/tests.yml?label=Tests&style=flat-square" alt="Build Status"></img></a>
 <a href="https://github.styleci.io/repos/27651218"><img src="https://github.styleci.io/repos/27651218/shield" alt="StyleCI Status"></img></a>
 <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-brightgreen?style=flat-square" alt="Software License"></img></a>
 <a href="https://github.com/GrahamCampbell/Packagist-Stats/releases"><img src="https://img.shields.io/github/release/GrahamCampbell/Packagist-Stats?style=flat-square" alt="Latest Version"></img></a>
@@ -15,12 +15,12 @@ Packagist Stats was created by, and is maintained by [Graham Campbell](https://g
 
 ## Usage
 
-This project is relatively small, and it's usage is pretty simple. [PHP](https://www.php.net/) 7.2-8.1 is required.
+This project is relatively small, and it's usage is pretty simple. [PHP](https://www.php.net/) 7.4-8.2 is required.
 
 To get the latest version, simply require the project using [Composer](https://getcomposer.org/) or download the phar from the [releases](https://github.com/GrahamCampbell/Packagist-Stats/releases) page:
 
 ```bash
-$ composer global require "graham-campbell/packagist-stats:^5.3"
+$ composer global require "graham-campbell/packagist-stats:^6.0"
 ```
 
 Show the stats for all packages under the `graham-campbell` vendor:

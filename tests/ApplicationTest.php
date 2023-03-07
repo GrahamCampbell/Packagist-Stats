@@ -23,7 +23,7 @@ class ApplicationTest extends TestCase
     {
         $app = new Application();
 
-        $this->assertInstanceOf(SymfonyApplication::class, $app);
-        $this->assertSame('Packagist Stats', $app->getName());
+        self::assertInstanceOf(SymfonyApplication::class, $app);
+        self::assertSame('Packagist Stats', $app->getName());
     }
 }
