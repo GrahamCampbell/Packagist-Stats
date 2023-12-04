@@ -23,15 +23,15 @@
         "php": "^7.4.15 || ^8.0.2",
         "ext-json": "*",
         "composer/xdebug-handler": "^1.4 || ^2.0 || ^3.0",
-        "guzzlehttp/guzzle": "^7.4",
-        "guzzlehttp/psr7": "^2.4",
-        "symfony/console": "^4.4 || ^5.0 || ^6.0",
-        "symfony/error-handler": "^4.4 || ^5.0 || ^6.0",
+        "guzzlehttp/guzzle": "^7.8",
+        "guzzlehttp/psr7": "^2.6",
+        "symfony/console": "^4.4 || ^5.0 || ^6.0 || ^7.0",
+        "symfony/error-handler": "^4.4 || ^5.0 || ^6.0 || ^7.0",
         "knplabs/packagist-api": "^2.0"
     },
     "require-dev": {
-        "graham-campbell/analyzer": "^4.0",
-        "phpunit/phpunit": "^9.6"
+        "graham-campbell/analyzer": "^4.1",
+        "phpunit/phpunit": "^9.6.15"
     },
     "autoload": {
         "psr-4": {
